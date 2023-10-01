@@ -1,0 +1,41 @@
+.navigation {
+    background-color: $blue;
+    position: relative;
+    z-index: 5;
+    &__list {
+        display: flex;
+        flex-direction: column;
+        max-width: calc($tablet-screen - 1px);
+        margin: 0 auto;
+        //padding: 0 5px;
+        
+    }
+
+    &__item {
+        text-align: center;
+        padding: 10px 0 5px;
+        border-top: 1px solid rgba(255, 255, 255, 0.20);
+        border-bottom: 1px solid rgba(1, 1, 1, 0.20);
+
+        &:nth-child(1) {
+            border-top: none;
+        }
+
+        &:nth-child(4) {
+            border-bottom: none;
+        }
+
+        &:nth-child(5) {
+            width: 100vw;
+            background-color: $white;
+            padding: 0;
+            max-height: 56px;
+            border: none;
+        }
+    }
+
+    &__link {
+        color: $white;
+        text-transform: uppercase;
+    }
+}

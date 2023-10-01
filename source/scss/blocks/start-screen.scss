@@ -1,0 +1,49 @@
+.start-screen {
+    padding: 0 5px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-image: url("/img/bg-mobile.jpg");
+    position: relative;
+    z-index: 4;
+
+    &__welcome {
+        margin-top: 90px;
+    }
+
+
+    &__subWelcome {
+        margin: 7px 0 33px;
+    }
+
+
+    &__title {
+        color: $white;
+        font-size: 42px;
+        text-transform: uppercase;
+    }
+
+    &__slogan {
+        fill: $white;
+        margin: 38px 0 85px;
+        position: relative;
+
+        &::after {
+            fill: $white;
+            width: 14px;
+            height: 9px;
+            content: url("/img/beforeSlogan.png");
+            //background-image: url("/source/assets/img/beforeSlogan.png");
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    &__underBg {
+        fill: $white;
+    }
+}
